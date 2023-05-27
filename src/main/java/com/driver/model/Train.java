@@ -20,7 +20,7 @@ public class Train {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int trainId;
 
-    private String route;
+    private String route; // “B,D,A”
 
     //Mapping with tickets Entity : parent Entity
     @OneToMany(mappedBy = "train", cascade = CascadeType.ALL)
